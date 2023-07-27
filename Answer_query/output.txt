@@ -1,0 +1,428 @@
+1.Find all the topics and tasks which are thought in the month of October
+
+
+{
+  _id: ObjectId("64c21febe95b254ccbd76569"),
+  topic_id: 1,
+  topic: 'HTML',
+  description: 'Master Html',
+  start_date: 2023-10-07T00:00:00.000Z,
+  end_date: 2023-10-08T00:00:00.000Z,
+  task: [
+    {
+      _id: ObjectId("64c21fc8e95b254ccbd76564"),
+      task_id: 1,
+      topic: 'HTML',
+      description: 'Create a content using HTML',
+      deadline_date: 2023-10-09T00:00:00.000Z
+    }
+  ]
+}
+{
+  _id: ObjectId("64c21febe95b254ccbd7656a"),
+  topic_id: 2,
+  topic: 'CSS',
+  description: 'Master Css',
+  start_date: 2023-10-14T00:00:00.000Z,
+  end_date: 2023-10-15T00:00:00.000Z,
+  task: [
+    {
+      _id: ObjectId("64c21fc8e95b254ccbd76565"),
+      task_id: 2,
+      topic: 'CSS',
+      description: 'Style - created HTML content',
+      deadline_date: 2023-10-16T00:00:00.000Z
+    }
+  ]
+}
+{
+  _id: ObjectId("64c21febe95b254ccbd7656b"),
+  topic_id: 3,
+  topic: 'Javascript',
+  description: 'Master Javascript',
+  start_date: 2023-10-21T00:00:00.000Z,
+  end_date: 2023-10-22T00:00:00.000Z,
+  task: [
+    {
+      _id: ObjectId("64c21fc8e95b254ccbd76566"),
+      task_id: 3,
+      topic: 'Javascript',
+      description: 'Add logics to the created content',
+      deadline_date: 2023-10-23T00:00:00.000Z
+    }
+  ]
+}
+{
+  _id: ObjectId("64c21febe95b254ccbd7656c"),
+  topic_id: 4,
+  topic: 'React',
+  description: 'Master React',
+  start_date: 2023-10-28T00:00:00.000Z,
+  end_date: 2023-10-29T00:00:00.000Z,
+  task: [
+    {
+      _id: ObjectId("64c21fc8e95b254ccbd76567"),
+      task_id: 4,
+      topic: 'React',
+      description: 'Create same website (created by using of html,css & js) using react',
+      deadline_date: 2023-10-30T00:00:00.000Z
+    }
+  ]
+}
+
+2.Find all the company drives which appeared between 15 oct-2023 and 31-oct-2023
+
+{
+  _id: ObjectId("64c21f2ee95b254ccbd76550"),
+  userid: 1,
+  drive_date: 2023-10-16T00:00:00.000Z,
+  company: 'TCS'
+}
+{
+  _id: ObjectId("64c21f2ee95b254ccbd76551"),
+  userid: 2,
+  drive_date: 2023-10-19T00:00:00.000Z,
+  company: 'Zoho'
+}
+{
+  _id: ObjectId("64c21f2ee95b254ccbd76552"),
+  userid: 3,
+  drive_date: 2023-10-22T00:00:00.000Z,
+  company: 'Amazon'
+}
+
+{
+  _id: ObjectId("64c21f2ee95b254ccbd76553"),
+  userid: 4,
+  drive_date: 2023-10-28T00:00:00.000Z,
+  company: 'Wipro'
+}
+
+3.Find all the company drives and students who are appeared for the placement
+
+
+{
+  _id: ObjectId("64c21f2ee95b254ccbd76550"),
+  drive_date: 2023-10-16T00:00:00.000Z,
+  company: 'TCS',
+  student: [
+    {
+      userid: 1,
+      name: 'Abinaya',
+      email: 'abiharsha2000@gmail.com',
+      mentor: 'Sathish'
+    }
+  ]
+}
+{
+  _id: ObjectId("64c21f2ee95b254ccbd76551"),
+  drive_date: 2023-10-19T00:00:00.000Z,
+  company: 'Zoho',
+  student: [
+    {
+      userid: 1,
+      name: 'Abinaya',
+      email: 'abiharsha2000@gmail.com',
+      mentor: 'Sathish'
+    }
+  ]
+}
+{
+  _id: ObjectId("64c21f2ee95b254ccbd76552"),
+  drive_date: 2023-10-22T00:00:00.000Z,
+  company: 'Amazon',
+  student: [
+    {
+      userid: 2,
+      name: 'Surya',
+      email: 'surya19@gmail.com',
+      mentor: 'Nagaraj'
+    }
+  ]
+}
+{
+  _id: ObjectId("64c21f2ee95b254ccbd76553"),
+  drive_date: 2023-10-28T00:00:00.000Z,
+  company: 'Wipro',
+  student: [
+    {
+      userid: 3,
+      name: 'peter',
+      email: 'peter20@gmail.com',
+      mentor: 'Sathish'
+    }
+  ]
+}
+{
+  _id: ObjectId("64c21f2ee95b254ccbd76554"),
+  drive_date: 2023-11-01T00:00:00.000Z,
+  company: 'Infosys',
+  student: [
+    {
+      userid: 4,
+      name: 'Atchaya',
+      email: 'atchuarumugam@gmail.com',
+      mentor: 'Rupan'
+    }
+  ]
+}
+
+
+4.Find the number of problems solved by the user in codekata
+{
+  _id: ObjectId("64c22019e95b254ccbd7656e"),
+  userid: 1,
+  name: 'Abinaya',
+  email: 'abiharsha2000@gmail.com',
+  mentor: 'Sathish',
+  codekata: [
+    {
+      codekata_solved: 200,
+      webkata_solved: 20
+    }
+  ]
+}
+{
+  _id: ObjectId("64c22019e95b254ccbd7656f"),
+  userid: 2,
+  name: 'Surya',
+  email: 'surya19@gmail.com',
+  mentor: 'Nagaraj',
+  codekata: [
+    {
+      codekata_solved: 250,
+      webkata_solved: 60
+    }
+  ]
+}
+{
+  _id: ObjectId("64c22019e95b254ccbd76570"),
+  userid: 3,
+  name: 'peter',
+  email: 'peter20@gmail.com',
+  mentor: 'Sathish',
+  codekata: [
+    {
+      codekata_solved: 210,
+      webkata_solved: 15
+    }
+  ]
+}
+{
+  _id: ObjectId("64c22019e95b254ccbd76571"),
+  userid: 4,
+  name: 'Atchaya',
+  email: 'atchuarumugam@gmail.com',
+  mentor: 'Rupan',
+  codekata: [
+    {
+      codekata_solved: 100,
+      webkata_solved: 90
+    }
+  ]
+}
+{
+  _id: ObjectId("64c22019e95b254ccbd76572"),
+  userid: 5,
+  name: 'Anu',
+  email: 'anureddy2000@gmail.com',
+  mentor: 'Sathish',
+  codekata: [
+    {
+      codekata_solved: 150,
+      webkata_solved: 100
+    }
+  ]
+}
+
+5.Find all the mentors with who has the mentee's count more than 15
+{
+  mentor_id: 1,
+  mentor_name: 'Sathish',
+  mentees: 30
+}
+{
+  mentor_id: 3,
+  mentor_name: 'sudha',
+  mentees: 50
+}
+{
+  mentor_id: 4,
+  mentor_name: 'Anitha',
+  mentees: 70
+}
+{
+  mentor_id: 5,
+  mentor_name: 'Ramya',
+  mentees: 16
+}
+{
+  mentor_id: 8,
+  mentor_name: 'Parvathy',
+  mentees: 32
+}
+{
+  mentor_id: 10,
+  mentor_name: 'Amutha',
+  mentees: 35
+}
+6.Find the number of users who are absent and task is not submitted  between 15 oct-2023 and 31-oct-2023
+{
+  _id: ObjectId("64c22019e95b254ccbd76570"),
+  userid: 3,
+  name: 'peter',
+  email: 'peter20@gmail.com',
+  mentor: 'Sathish',
+  attendance: [
+    {
+      _id: ObjectId("64c21e27e95b254ccbd7652d"),
+      userid: 3,
+      Class_date: 3023-10-07T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd7652e"),
+      userid: 3,
+      Class_date: 2023-10-08T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd7652f"),
+      userid: 3,
+      Class_date: 2023-10-14T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76530"),
+      userid: 3,
+      Class_date: 2023-10-15T00:00:00.000Z,
+      attendance: false
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76531"),
+      userid: 3,
+      Class_date: 2023-10-21T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76532"),
+      userid: 3,
+      Class_date: 2023-10-22T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76533"),
+      userid: 3,
+      Class_date: 2023-10-28T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76534"),
+      userid: 3,
+      Class_date: 2023-10-29T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76535"),
+      userid: 3,
+      Class_date: 2023-11-05T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76536"),
+      userid: 3,
+      Class_date: 2023-11-06T00:00:00.000Z,
+      attendance: false
+    }
+  ],
+  'task-comp': [
+    {
+      _id: ObjectId("64c21f9ee95b254ccbd76561"),
+      userid: 3,
+      task_completion: false,
+      pending_task_id: [
+        1,
+        2
+      ]
+    }
+  ]
+}
+{
+  _id: ObjectId("64c22019e95b254ccbd76572"),
+  userid: 5,
+  name: 'Anu',
+  email: 'anureddy2000@gmail.com',
+  mentor: 'Sathish',
+  attendance: [
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76541"),
+      userid: 5,
+      Class_date: 2023-10-07T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76542"),
+      userid: 5,
+      Class_date: 2023-10-08T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76543"),
+      userid: 5,
+      Class_date: 2023-10-14T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76544"),
+      userid: 5,
+      Class_date: 2023-10-15T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76545"),
+      userid: 5,
+      Class_date: 2023-10-21T00:00:00.000Z,
+      attendance: false
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76546"),
+      userid: 5,
+      Class_date: 2023-10-22T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76547"),
+      userid: 5,
+      Class_date: 2023-10-28T00:00:00.000Z,
+      attendance: false
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76548"),
+      userid: 5,
+      Class_date: 2023-10-29T00:00:00.000Z,
+      attendance: true
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd76549"),
+      userid: 5,
+      Class_date: 2023-11-05T00:00:00.000Z,
+      attendance: false
+    },
+    {
+      _id: ObjectId("64c21e27e95b254ccbd7654a"),
+      userid: 5,
+      Class_date: 2023-11-06T00:00:00.000Z,
+      attendance: false
+    }
+  ],
+  'task-comp': [
+    {
+      _id: ObjectId("64c21f9ee95b254ccbd76563"),
+      userid: 5,
+      task_completion: false,
+      pending_tasks_id: [
+        2
+      ]
+    }
+  ]
+}

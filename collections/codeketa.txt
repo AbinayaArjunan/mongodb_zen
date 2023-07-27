@@ -1,0 +1,10 @@
+
+db.createCollection("codekata");
+
+db.codekata.insertMany([
+  { user_id: 1, codekata_solved: 200, webkata_solved: 20 },
+  { user_id: 2, codekata_solved: 250, webkata_solved: 60 },
+  { user_id: 3, codekata_solved: 210, webkata_solved: 15 },
+  { user_id: 4, codekata_solved: 100, webkata_solved: 90 },
+  { user_id: 5, codekata_solved: 150, webkata_solved: 100 }
+]);

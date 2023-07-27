@@ -1,0 +1,34 @@
+db.createCollection("users");
+
+db.users.insertMany([
+  {    
+    userid: 1,
+    name: 'Abinaya',
+    email: 'abiharsha2000@gmail.com',
+    mentor: 'Sathish'
+  },
+  {    
+    userid: 2,
+    name: 'Surya',
+    email: 'surya19@gmail.com',
+    mentor: 'Nagaraj'
+  },
+  {   
+    userid: 3,
+    name: 'peter',
+    email: 'peter20@gmail.com',
+    mentor: 'Sathish'
+  },
+  {   
+    userid: 4,
+    name: 'Atchaya',
+    email: 'atchuarumugam@gmail.com',
+    mentor: 'Rupan'
+  },
+  {
+    userid: 5,
+    name: 'Anu',
+    email: 'anureddy2000@gmail.com',
+    mentor: 'Sathish'
+  }
+]);
